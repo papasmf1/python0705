@@ -1,0 +1,25 @@
+*값형식(Value type): Pass By Value, Call By Value
+정수, 실수, bool형식... (단순형식들)
+int x = 5; 
+int y = x; 
+y = 6; 
+stack
+---------
+x(5)
+y(6)
+---------
+
+*참조형식(Reference type):객체를 기반으로 사용하는 형식
+Pass By Reference, Call By Reference 
+Demo d1 = new Demo();
+Demo d2 = d1; 
+
+p = phone  참조를 복사 
+
+heap
+-----------
+객체 <------------- d1 (phone)
+     <------------- d2 (p) 
+
+
+-----------
