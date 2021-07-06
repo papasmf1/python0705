@@ -34,3 +34,46 @@ def union(*ar):
 print( union("HAM","EGG") )
 print( union("HAM","EGG","SPAM") )
 
+
+#정의되지 않은 인자 처리(딕셔너리로 처리)
+def userURIBuilder(server, port, **user):
+    str = "http://" + server + ":" + port + "/?"
+    for key in user.keys():
+        str += key + "=" + user[key] + "&"
+    return str 
+
+#호출
+print( userURIBuilder("kpc.net", "80", id="kim", passwd="1234"))
+print( userURIBuilder("kpc.net", "80", id="kim", 
+    passwd="1234", name="mike"))
+
+#람다 표현식(간단하게 함수를 정의)
+g = lambda x,y:x*y 
+print( g(3,4) )
+print( g(5,6) )
+print( (lambda x:x*x)(3) )
+print( globals() )
+
+#도움말 추가
+def times(a,b):
+    """이 함수는 2개의 숫자를 
+       입력받아서 곱해서 리턴합니다.
+    """
+    return a*b 
+
+#호출
+print( help(times) )
+
+#순회가능한 형식(시퀀스형식): 리스트, 튜플, 문자열
+for item in [1,2,3]:
+    print(item)
+
+for char in "abc":
+    print(char)
+
+#저수준으로 처리
+s = "abc"
+it = iter(s)
+print( next(it) )    
+print( next(it) )    
+
