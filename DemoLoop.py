@@ -57,3 +57,29 @@ print(result)
 
 d = {100:"apple", 200:"kiwi", 300:"orange"}
 print( [v.upper() for v in d.values()] )
+
+#필터링하는 함수
+lst = [10, 25, 30]
+iterL = filter(None, lst)
+for item in iterL:
+    print(item)
+
+print("---필터링---")
+def getBiggerThan20(i):
+    return i>20
+
+iterL = filter(getBiggerThan20, lst)
+for item in iterL:
+    print(item)
+
+#람다 표현식(간단한 함수 정의 문법)
+iterL = filter(lambda x:x>20, lst)
+for item in iterL:
+    print(item)
+
+#결과값을 합치는 함수
+x = [10, 20, 30]
+y = ["A","B","C"]
+for item in zip(x,y):
+    print(item)
+    
