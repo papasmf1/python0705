@@ -27,5 +27,4 @@ for item in lst:
     #문자열을 치환
     print( item.replace("\n", "") )
 
-
 f.close()
