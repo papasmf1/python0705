@@ -26,3 +26,10 @@ print( re.search("[0-9]*th", "  35th") )
 print( re.match("[0-9]*th", "  35th") )
 print( re.search("apple", "this is apple") )
 print( re.match("apple", "this is apple") )
+
+#우편번호 패턴 
+print("---우편번호---")
+result = re.search("\d{5}", "우리동네는 52300")
+print( result.group() )
+result = re.search("\d{4}", "올해는 2021년")
+print( result.group() )
