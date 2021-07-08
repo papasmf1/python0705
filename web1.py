@@ -16,7 +16,7 @@ soup = BeautifulSoup(page, "html.parser")
 
 #내부의 문자열만 가져오기 
 for tag in soup.find_all("p"):
-    print(tag.text)
+    print( tag.text.replace("\n", "").strip() )
 
     
     
