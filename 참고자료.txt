@@ -36,7 +36,9 @@ Designer.exe가 있는 폴더에 복사해준다.)
 pip install pyinstaller
 pyinstaller --onefile BankAccount.py
 (실행파일로 만들기)
-pyinstaller --noconsole --onefile DemoForm2.py
+pyinstaller --noconsole --onefile form2.py
+pyinstaller --noconsole --onefile webData5.py
+
 http://thrillfighter.tistory.com/394
 (c, c++컴파일러)
 https://visualstudio.microsoft.com/ko/downloads/
@@ -59,7 +61,8 @@ pip install seaborn
 (엑셀파일을 읽어야 하는 경우)
 pip install xlrd
 pip install openpyxl
- 
+pip install ipykernel 
+
 
 
 아나콘다 다운로드 
